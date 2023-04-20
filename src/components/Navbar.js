@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 import { useState } from "react";
 export default function Navbar() {
@@ -5,9 +6,9 @@ export default function Navbar() {
 
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
+      <NavLink to="/" className="brand-name">
         MacroSoft
-      </a>
+      </NavLink>
       <button
         className="hamburger"
         onClick={() => {
@@ -34,13 +35,13 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/">Hjem</a>
+            <NavLink to="/">Hjem</NavLink>
           </li>
           <li>
-            <a href="/omos">Om os</a>
+            <NavLink to="/omos">Om os</NavLink>
           </li>
           <li>
-            <a href="/kontakt">Kontakt</a>
+            <NavLink to="/kontakt">Kontakt</NavLink>
           </li>
         </ul>
       </div>
