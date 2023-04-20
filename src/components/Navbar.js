@@ -35,13 +35,13 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <NavLink to="/">Hjem</NavLink>
+            <NavLink to="/" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>Hjem</NavLink>
           </li>
           <li>
-            <NavLink to="/omos">Om os</NavLink>
+            <NavLink to="/omos" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>Om os</NavLink>
           </li>
           <li>
-            <NavLink to="/kontakt">Kontakt</NavLink>
+            <NavLink to="/kontakt" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>Kontakt</NavLink>
           </li>
         </ul>
       </div>
